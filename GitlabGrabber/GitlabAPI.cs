@@ -1,5 +1,13 @@
 ﻿// Auto-generated DTOs from received Gitlab API samples
 
+public class Error
+{
+    public string error { get; set; }
+    public string error_description { get; set; }
+    public string scope { get; set; }
+    public string message { get; set; }
+}
+
 public class Group
 {
     public int id { get; set; }
