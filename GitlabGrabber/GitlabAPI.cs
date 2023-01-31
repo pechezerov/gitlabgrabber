@@ -211,3 +211,49 @@ public class Container_Expiration_Policy
     public object name_regex_keep { get; set; }
     public DateTime? next_run_at { get; set; }
 }
+
+//
+public class ProjectSet
+{
+    public Project[] Projects { get; set; }
+}
+
+public class Owner
+{
+    public int id { get; set; }
+    public string username { get; set; }
+    public string name { get; set; }
+    public string state { get; set; }
+    public string avatar_url { get; set; }
+    public string web_url { get; set; }
+}
+
+public class Permissions
+{
+    public object project_access { get; set; }
+    public object group_access { get; set; }
+}
+
+public class Forked_From_Project
+{
+    public int id { get; set; }
+    public string description { get; set; }
+    public string name { get; set; }
+    public string name_with_namespace { get; set; }
+    public string path { get; set; }
+    public string path_with_namespace { get; set; }
+    public DateTime created_at { get; set; }
+    public string default_branch { get; set; }
+    public object[] tag_list { get; set; }
+    public object[] topics { get; set; }
+    public string ssh_url_to_repo { get; set; }
+    public string http_url_to_repo { get; set; }
+    public string web_url { get; set; }
+    public string readme_url { get; set; }
+    public string avatar_url { get; set; }
+    public int forks_count { get; set; }
+    public int star_count { get; set; }
+    public DateTime last_activity_at { get; set; }
+    public Namespace _namespace { get; set; }
+}
+

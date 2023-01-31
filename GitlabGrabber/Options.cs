@@ -10,4 +10,10 @@ public class Options
 
     [Option('t', "token", Required = true, HelpText = "Gitlab token")]
     public string Token { get; set; } = default!;
+
+    [Option('g', "groups", Required = false, HelpText = "Load group projects")]
+    public int LoadGroups { get; set; } = 1;
+
+    [Option('p', "projects", Required = false, HelpText = "Load direct projects")]
+    public int LoadDirectProjects { get; set; } = 1;
 }
